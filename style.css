@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
-  /* min-height: 8000px; */
+  min-height: 3000px;
 }
 .navbar {
   display: flex;
@@ -83,20 +83,33 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .box {
-  width: calc(50% - 20px); 
-  min-width: 200px;
-  min-height: 200px;
+  width: 170px;
+  height: 300px;
   border: 1px solid #dddddd;
-  margin: 10px;
+  margin: 25px;
   padding: 10px;
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  text-align: center;
+}
+
+.boxm {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #dddddd;
+  margin: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  text-align: center;
 }
 
 h3 {
@@ -104,12 +117,12 @@ h3 {
 }
 
 .holo {
-  font-size: 3rem;
+  font-size: 2rem;
 
 }
 
 .polo {
-  color: black;
+  color: rgb(0, 0, 0);
   font-size: 1.5rem;
 }
 
@@ -339,18 +352,27 @@ h3 {
   .holo {
     color: rgb(0, 0, 0);
     margin-top: 0;
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 0px;
   }
 
   .box {
-    width: calc(100% - 20px); 
+    width: 145px;
+    height: 170px;
+    margin: 10px;
+}
+
+  .boxm {
+    width: 150px;
+    height: 140px;
+    margin: 10px;
 }
 
 .polo {
   color: rgb(0, 0, 0);
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
+  justify-content: center;
 }
 
  
